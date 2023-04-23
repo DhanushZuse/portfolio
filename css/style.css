@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    margin: 0px;
+    padding: 0px 0px;
+    overflow: overlay;
+    width: 100vw;
+    overflow-x:hidden
+}
+
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.mainbg{
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    border: 1px solid;
+    background-image: url(https://images.unsplash.com/photo-1633218388467-539651dcf81f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.links{
+    /* border: 1px solid white; */
+    margin-top: 20vh;
+    margin-left: 10vw;
+    width: 60%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-content: space-evenly;
+    justify-items: center;
+}
+.linkpic{
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 100px;
+    height: 75px;
+    width: 75px;
+    background-image: url(../img/profile.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.iconbox{
+    border: 1px solid white;
+    border-radius: 100px;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linklinkedin{
+    height: 40%;
+    width: 40%;
+    background-image: url(../img/linkedin.png);
+    background-size: cover;
+    filter: invert(1);
+}
+.git{
+    height: 40%;
+    width: 40%;
+    background-image: url(../img/github.png);
+    background-size: cover;
+    filter: invert(1);
+}
+.twitter{
+    height: 40%;
+    width: 40%;
+    background-image: url(../img/twitter.png);
+    background-size: cover;
+    filter: invert(1);
+}
+.insta{
+    height: 40%;
+    width: 40%;
+    background-image: url(../img/instagram.png);
+    background-size: cover;
+    filter: invert(1);
+}
+
+
+.myself{
+    color: white;
+    font-size: 10vh;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 12vw;
+    margin-top: 2vh;
+}
+
+.mydetails{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 12vw;
+}
+
+.descbox{
+    background-color: black;
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+.desc{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5vh;
+    margin: 13vh 22vw 0vh 14vw;
+}
+
+.projectbg{
+    background-image: url(https://images.unsplash.com/photo-1508882100003-8ae16a4abbaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=721&q=80);
+    /* height: 150vh; */
+    padding: 3vh  0vw;
+    width: 100vw;
+    background-size: 70vh 70vw;
+    background-position: center;
+    overflow: hidden;
+}
+
+.protitle{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 4vh;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+.projectbox{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.procard{
+    height: 50vh;
+    width: 20%;
+    margin: 3% 4%;
+    border: 1px solid rgb(31, 31, 31);
+    border-radius: 7px;
+    background-color: black;
+}
+.cardpic{
+    background-image: url(https://images.unsplash.com/photo-1622050756792-5b1180bbb873?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    width: 90%;
+    margin: 5% 5%;
+    border-radius: 3px;
+}
+.cardtitle{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vh;
+    /* font-weight: bold; */
+    padding: 1vh 1vw;
+}
+.carddesc{
+    color: rgb(148, 148, 148);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    width: 90%;
+    height: 20%;
+    padding: 1vh 1vw;
+}
+.cardbtn{
+    width: 40%;
+    height: 10%;
+    margin-top: 3%;
+    margin-left: 6%;
+    background-color: #0e0e0e;
+    color: rgb(165, 165, 165);
+    border: 1px solid #0e0e0e;
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    transition-duration: 500ms;
+}
+.cardbtn:hover{
+    color: black;
+    background-color: rgb(194, 192, 192);
+}
