@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 html, body{
     margin: 0px;
@@ -36,7 +37,7 @@ html, body{
 
 
 .mainbg{
-    height: 100vh;
+    height: auto;
     width: 100%;
     margin: 0px;
     border: 1px solid;
@@ -48,12 +49,20 @@ html, body{
     /* border: 1px solid white; */
     margin-top: 20vh;
     margin-left: 10vw;
+    margin: 20vh 0vw 3vh 10vw;
     width: 60%;
     height: 20vh;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     align-content: space-evenly;
     justify-items: center;
+}
+@media only screen and (max-width: 650px){
+    .links{
+        margin: 3vh 0vw 3vh 1vw;
+        width: 98%;
+        height: 15vh;
+    }
 }
 .linkpic{
     border: 2px solid rgb(70, 70, 70);
@@ -108,31 +117,47 @@ html, body{
     color: white;
     font-size: 10vh;
     font-family: 'Poppins', sans-serif;
-    margin-left: 12vw;
-    margin-top: 2vh;
+    margin: 2vh 10vw 1vh 10vw;
+}
+
+@media only screen and (max-width: 550px){
+    .myself{
+        font-size: 5vh;
+        margin: 1vh 10vw 1vh 10vw;
+    }
 }
 
 .mydetails{
     color: white;
     font-family: 'Poppins', sans-serif;
-    margin-left: 12vw;
-    margin-top: 2vh;
+    margin: 2vh 10vw 22vh 10vw;
+}
+@media only screen and (max-width: 700px){
+    .mydetails{
+        margin: 10vh 4vw 22vh 10vw;
+        line-height: 5vh;
+    }
 }
 
 .descbox{
     background-color: black;
-    height: 60vh;
-    width: 100vw;
+    height: auto;
+    width: 99.5vw;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .desc{
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 5vh;
-    margin: 13vh 22vw 0vh 14vw;
+    margin: 10vh 5vw 10vh 10vw;
+}
+@media only screen and (max-width: 500px){
+    .desc{
+        font-size: 3vh;
+    }
 }
 
 .projectbg{
@@ -166,9 +191,9 @@ html, body{
 }
 .procard{
     height: 50vh;
-    width: 20%;
-    margin: 3% 4%;
-    border: 1px solid rgb(31, 31, 31);
+    width: 400px;
+    margin: 4% 4%;
+    border: 1px solid rgb(43, 43, 43);
     border-radius: 7px;
     background-color: black;
 }
@@ -186,7 +211,7 @@ html, body{
     font-family: 'Poppins', sans-serif;
     font-size: 2.5vh;
     /* font-weight: bold; */
-    padding: 1vh 1vw;
+    padding: 1vh 3vw;
 }
 .carddesc{
     color: rgb(148, 148, 148);
@@ -212,4 +237,11 @@ html, body{
 .cardbtn:hover{
     color: black;
     background-color: rgb(194, 192, 192);
+}
+footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
