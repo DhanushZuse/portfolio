@@ -11,6 +11,37 @@ html, body{
     overflow-x:hidden
 }
 
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-100vw);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(100vw);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft{
+    animation-name: slideInLeft;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+    transform-origin: top right;
+}
+
+.slideInRight{
+    animation-name: slideInRight;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+    transform-origin: top left;
+}
 
 /* scroll bar */
 /* width */
@@ -142,10 +173,11 @@ html, body{
 .descbox{
     background-color: black;
     height: auto;
-    width: 99.5vw;
+    width: calc(100vw - 1px);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid white;
+    overflow: auto;
 }
 
 .desc{
